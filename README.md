@@ -3,11 +3,22 @@ A Python Flask URL Shortener with a global API. The goal of this project is to c
 
 A global API exists to create short urls as well as vouchers.
 
-Short URL Features:
+## Short URL Features:
 - Visit tracking
-- Visit webhooks
+- Webhooks (see below)
 - Expiring Short URLs
 - Require Voucher to redirect
 - Expiring Vouchers
 - Limited Use Vouchers
 - Custom Vouchers, such as FREE or LIMIT30
+
+
+## Webhooks
+Webhooks can be called during the following events
+- On Redirect
+
+They contain the following:
+- IP Address
+- User Agent
+- Voucher Used
+- Short URL
